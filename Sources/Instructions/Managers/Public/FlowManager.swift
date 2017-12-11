@@ -71,7 +71,8 @@ public class FlowManager {
     private var canShowCoachMark = true
 
     /// The index (in `coachMarks`) of the coach mark being currently displayed.
-    internal var currentIndex = -1
+    // changed to public in fork repo
+    public var currentIndex = -1
 
     init(coachMarksViewController: CoachMarksViewController) {
         self.coachMarksViewController = coachMarksViewController
@@ -98,7 +99,8 @@ public class FlowManager {
         paused = true
     }
 
-    internal func reset() {
+    // changed to public in fork repo
+    public func reset() {
         currentIndex = -1
         paused = false
         canShowCoachMark = true

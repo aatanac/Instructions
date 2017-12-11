@@ -52,6 +52,11 @@ public class CoachMarksController {
                                flowManager: self.flow)
     }()
 
+    // added to forked repo
+    public func hideThisMark(view: CoachMark) {
+        coachMarksViewController.hide(coachMark: view, animated: true)
+    }
+
     /// Handles the flow of coachmarks.
     fileprivate(set) public lazy var flow: FlowManager = {
         let flowManager = FlowManager(coachMarksViewController: self.coachMarksViewController)
